@@ -11,7 +11,7 @@ export const metadata = {
 export default function Layout(props) {
   console.log("layout",props.modal);
   return (
-    <html>
+    <html dir='rtl'>
       <body>
         {props.children}
         {props.modal}
