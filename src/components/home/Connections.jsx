@@ -300,7 +300,7 @@ export const Connections = () => {
         </ul>
       }
       <span className="block text-left px-6 py-4 underline border-t mt-8 text-black text-md font-semibold">
-        התראות אחרונות
+      נקה התראות
       </span>
     </section>
   );

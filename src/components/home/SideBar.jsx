@@ -99,23 +99,23 @@ const Sidebar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 right-0 w-full h-full border-l bg-gray-100 sm:w-72 p-8">
-        <div class="flex flex-col h-full px-4">
+      <nav className="fixed top-0 right-0 w-full h-full border-l bg-gray-100 sm:w-72 w-16 py-8 sm:px-4">
+        <div class="flex flex-col h-full sm:px-4">
           <div className="h-20 flex flex-col items-center pr-2">
             <div
               ref={profileRef}
               onClick={() => setIsProfileActive(!isProfileActive)}
-              className="w-full border-[1px] border-gray-100 cursor-pointer rounded-3xl py-2 px-4 flex items-center gap-x-4 hover:bg-white hover:border-[1px]  hover:border-black active:bg-gray-150"
+              className="w-full border-[1px] border-gray-100 cursor-pointer rounded-3xl py-2 sm:px-4 flex items-center gap-x-4 hover:bg-white hover:border-[1px]  hover:border-black active:bg-gray-150"
             >
               <img
                 src="https://randomuser.me/api/portraits/women/79.jpg"
                 className="w-10 h-10 rounded-full"
               />
               <div>
-                <span className="block text-gray-700 text-sm font-semibold">
+                <span className="hidden sm:block block text-gray-700 text-sm font-semibold">
                   اليفيكا توني
                 </span>
-                <span className="block mt-px text-gray-600 text-xs">
+                <span className="hidden sm:block block mt-px text-gray-600 text-xs">
                   خطة هواية
                 </span>
               </div>
@@ -138,22 +138,22 @@ const Sidebar = () => {
               ""
             )}
           </div>
-          <div className="overflow-auto">
-            <ul className="text-md font-medium flex-1 mt-4 px-4">
+          <div>
+            <ul className="text-md font-medium flex-1 mt-4 pr-4 sm:px-2">
               {navigation.map((item, idx) => (
                 <li key={idx}>
                   <a
                     href={item.href}
-                    className="flex items-center gap-x-2 text-gray-600 p-4 rounded-lg  hover:bg-gray-300 active:bg-gray-100 duration-150"
+                    className="flex items-center gap-x-2 text-gray-600 sm:px-8 py-3 rounded-lg  hover:bg-gray-300 active:bg-gray-100 duration-150"
                   >
                     <div className="text-gray-500">{item.icon}</div>
-                    {item.name}
+                    <span className="hidden sm:inline">{item.name}</span>
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="w-full bg-gray-300 rounded-xl mt-28 py-8 px-4">
+          <div className="hidden sm:block w-full bg-gray-300 rounded-xl mt-28 py-8 px-4">
             <span className="block mt-px text-gray-600 text-xs">خطة هواية</span>
             <span className="block text-gray-700 text-md font-semibold mb-4">
               اليفيكا تونيفيكا تونيفيكا تونيفيكا تونيفيكا توني
