@@ -1,14 +1,23 @@
+'use client'
 import React from 'react'
-import Image from 'next/image'
-import Modal from '@/components/modal/Modal';
-import Frame from '@/components/frame/Frame';
+import { useRouter } from 'next/navigation'
+import Popup from '@/components/Popup';
 
-export default function page({ params }) {
+export default function Page() {
+    const router = useRouter();
     return (
         <div>
-            <Modal>
-                <Frame/>
-            </Modal>
+            <Popup>
+                <div className='w-full h-52 bg-teal-50 text-black'>
+                    This is the data and I am using this
+                    <button
+                        onClick={() => router.back()}
+                    >
+                        Back button
+                    </button>
+                </div>
+            </Popup>
         </div>
     )
 }
+

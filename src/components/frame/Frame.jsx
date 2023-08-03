@@ -1,5 +1,8 @@
+'use client'
 import Image from 'next/image'
-export default function Frame() {
+import { useRouter } from 'next/navigation'
+export default function Frame({children}) {
+
   return (
     <>
       {/* <Image
@@ -14,7 +17,7 @@ export default function Frame() {
         <h3>{photo.name}</h3>
         <p>Taken by {photo.username}</p>
       </div> */}
-      This is the data and I am using this
+      {children}
     </>
   )
 }
