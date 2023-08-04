@@ -9,7 +9,7 @@ const page = () => {
       {/* <Sidebar />
       <DataStats />
       <Connections /> */}
-      <Link href='/home/e1'>first</Link>
+      <Link href='/home/e11'>first</Link>
     </>
 
   )
