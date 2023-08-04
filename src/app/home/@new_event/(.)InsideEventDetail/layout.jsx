@@ -1,17 +1,18 @@
 'use client'
 import Popup from '@/components/Popup'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation';
 import React from 'react'
 
 export default function InsideEventLayout(props) {
-    console.log("props params",props);
+    const router = useRouter();
     return (
         <div>
             <Popup>
                 <div className='w-full rounded-lg bg-white text-black relative p-8'>
                     <button
                         onClick={() => router.back()}
-                        className='text-black absolute top-2 left-2'
+                        className='text-black absolute top-4 left-5'
                     >
                         ✖
                     </button>
