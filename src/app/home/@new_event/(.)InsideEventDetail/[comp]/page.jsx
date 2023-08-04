@@ -1,3 +1,4 @@
+import PostModal from '@/components/home/PostModal'
 import Image from 'next/image'
 import React from 'react'
 
@@ -65,11 +66,11 @@ export default function page({ params }) {
         },
     ]
     return (
-        <div>
+        <div className='w-[50vw]'>
             {
                 params.comp === '1' ?
                     (
-                        <div className='w-[50vw] flex mt-5 gap-8'>
+                        <div className=' flex mt-5 gap-8'>
                             <div className='w-[40%] flex flex-col'>
                                 {
                                     firstColumn.map((obj, index) => {
@@ -134,7 +135,7 @@ export default function page({ params }) {
                     ) :
                     (
                         <div>
-                            Second
+                            <PostModal/>
                         </div>
                     )
             }

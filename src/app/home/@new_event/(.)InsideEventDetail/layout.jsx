@@ -9,7 +9,7 @@ export default function InsideEventLayout(props) {
     return (
         <div>
             <Popup>
-                <div className='w-full rounded-lg bg-white text-black relative p-8'>
+                <div className='w-full h-[80vh] overflow-hidden rounded-lg bg-white text-black relative p-8'>
                     <button
                         onClick={() => router.back()}
                         className='text-black absolute top-4 left-5'
