@@ -99,7 +99,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 right-0 w-full h-full border-l bg-gray-100 sm:w-72 w-16 py-8 sm:px-4">
+      <nav className="fixed top-0 right-0 h-full border-l bg-gray-100 sm:w-72 w-16 py-8 sm:px-4">
         <div class="flex flex-col h-full sm:px-4">
           <div className="h-20 flex flex-col items-center pr-2">
             <div
