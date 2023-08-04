@@ -19,7 +19,7 @@ const Post = () => {
           />
         </svg>
       ),
-      title: "تحديث سريع",
+      title: "לפני 59 דקות",
       desc: "العميل مهم جدا ، العميل سيتبعه. حتى الواجب المنزلي ، يحتاج اللاعبون إلى موظفين مختلفين ، لأنهم طاهرون من الفم.",
       href: "javascript:void(0)",
     },
@@ -40,7 +40,7 @@ const Post = () => {
           />
         </svg>
       ),
-      title: "التحليلات",
+      title: "לפני 59 דקות",
       desc: "العميل مهم جدا ، العميل سيتبعه. حتى الواجب المنزلي ، يحتاج اللاعبون إلى موظفين مختلفين ، لأنهم طاهرون من الفم.",
       href: "javascript:void(0)",
     },
@@ -61,7 +61,7 @@ const Post = () => {
           />
         </svg>
       ),
-      title: "أمن مركز البيانات",
+      title: "أمن مركز לפני 59 דקות",
       desc: "العميل مهم جدا ، العميل سيتبعه. حتى الواجب المنزلي ، يحتاج اللاعبون إلى موظفين مختلفين ، لأنهم طاهرون من الفم.",
       href: "javascript:void(0)",
     },
@@ -137,9 +137,9 @@ const Post = () => {
             {features.map((item, idx) => (
               <li
                 key={idx}
-                className="flex justify-between gap-x-4 border-2 border-gray-400 rounded-md p-6"
+                className="flex flex-col items-center md:items-start md:flex-row md:justify-between gap-x-4 border-2 border-gray-400 rounded-md p-2 min-[480px]:p-6"
               >
-                <div className="flex gap-x-4">
+                <div className="flex flex-col gap-y-2 min-[480px]:flex-row gap-x-4">
                   <img
                     src="https://randomuser.me/api/portraits/women/79.jpg"
                     className="w-10 h-10 rounded-full"
@@ -147,19 +147,19 @@ const Post = () => {
                   <div className="space-y-3">
                     <div className="flex gap-x-4">
                       <span className="font-normal bg-[#eaf4f4] rounded-xl px-2 text-sm">
-                        معرفة المزي
+                        לפני 59 דקות   
                       </span>
-                      <span className="font-medium">12.4.22</span>
+                      <span className="font-bold">12.4.22</span>
                     </div>
                     <h4 className="text-lg text-gray-800 font-semibold">
                       {item.title}
                     </h4>
-                    <p className="w-96">{item.desc}</p>
+                    <p className="w-80">{item.desc}</p>
                     <a
                       href={item.href}
                       className="text-md underline text-indigo-600 duration-150 text-indigo-400 font-medium inline-flex items-center gap-x-1"
                     >
-                      معرفة المزيد
+                      לפני 59 דקות
                     </a>
                   </div>
                 </div>
