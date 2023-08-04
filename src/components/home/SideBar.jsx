@@ -105,23 +105,23 @@ const Sidebar = () => {
             <div
               ref={profileRef}
               onClick={() => setIsProfileActive(!isProfileActive)}
-              className="w-full border-[1px] border-gray-100 cursor-pointer rounded-3xl py-2 sm:px-4 flex items-center gap-x-4 hover:bg-white hover:border-[1px]  hover:border-black active:bg-gray-150"
+              className="w-full border-[1px] border-gray-100 cursor-pointer rounded-3xl py-2 sm:px-4 flex items-center gap-x-4 hover:bg-white hover:border-[1px] hover:border-black active:bg-gray-150"
             >
               <img
                 src="https://randomuser.me/api/portraits/women/79.jpg"
                 className="w-10 h-10 rounded-full"
               />
               <div>
-                <span className="hidden sm:block block text-gray-700 text-sm font-semibold">
+                <span className="hidden sm:block text-gray-700 text-sm font-semibold">
                   اليفيكا توني
                 </span>
-                <span className="hidden sm:block block mt-px text-gray-600 text-xs">
+                <span className="hidden sm:block mt-px text-gray-600 text-xs">
                   خطة هواية
                 </span>
               </div>
             </div>
             {isProfileActive ? (
-              <div className="z-10 top-20 left-0 w-full rounded-lg bg-white shadow-md border text-sm text-gray-600">
+              <div className="hidden sm:block z-10 top-20 left-0 w-full rounded-lg bg-white shadow-md border text-sm text-gray-600">
                 <div className="p-4 text-right">
                   <button className="block w-full p-2 text-right rounded-md hover:bg-gray-50 active:bg-gray-100 duration-150">
                     تسجيل خروج
