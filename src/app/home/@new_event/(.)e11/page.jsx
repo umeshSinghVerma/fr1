@@ -15,7 +15,7 @@ export default function Page() {
                 <div className='w-full rounded-lg bg-white text-black relative p-8'>
                     <button
                         onClick={() => router.back()}
-                        className='text-black absolute top-2 left-2'
+                        className='text-black absolute top-4 left-5'
                     >
                         ✖
                     </button>
