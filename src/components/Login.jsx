@@ -1,35 +1,13 @@
 'use client'
-import axios from "axios";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-// import { signIn, useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react"
-import RouterDOM from 'react-dom'
-// Initialization for ES Users
-import {
-    Modal,
-    Ripple,
-    initTE,
-} from "tw-elements";
-
 export default function Login() {
-    useEffect(() => {
-        initTE({ Modal, Ripple });
-    }, []);
-    // const session = useSession();
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [remember, setRemember] = useState(false);
     const router = useRouter();
-    // const {login,isLoading,error} = useLogin();
-    const [darktMode,setdarktMode]=useState(false);
-    // useEffect(()=>{
-        document.documentElement.classList.remove("darkt")
-    // },[])
     const handleSubmit = async (e) => {
         e.preventDefault();
-        router.push("/hello");
+        router.push("/home");
         // e.preventDefault();
         // signIn("credentials", {
         //     email,
@@ -139,7 +117,6 @@ export default function Login() {
                             >
                                 Sign up
                             </button>
-                            <Link href={'/signup'}>signup</Link>
                         </p>
                         {/* {error && <div className="text-slate-900 darkt:text-white text-sm">{error}</div>} */}
                     </form>

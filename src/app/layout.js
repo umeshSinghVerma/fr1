@@ -9,12 +9,10 @@ export const metadata = {
 }
 
 export default function Layout(props) {
-  console.log("layout",props.modal);
   return (
     <html dir='rtl'>
       <body>
         {props.children}
-        {props.modal}
       </body>
     </html>
   )
