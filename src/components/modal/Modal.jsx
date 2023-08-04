@@ -8,7 +8,7 @@ export default function Modal({ children }) {
   const router = useRouter();
 
   const onDismiss = useCallback(() => {
-    router.push('/home');
+    router.back();
   }, [router]);
 
   const onClick = useCallback((e) => {

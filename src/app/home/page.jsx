@@ -12,7 +12,7 @@ const page = () => {
       {/* <DataStats /> */}
       {/* <Connections /> */}
       <Link href='/home/InsideEventDetail/1'>first</Link>
-      <Link href='/home/e11'>second</Link>
+      <Link href='/home/e2'>second</Link>
       <Link href='/home/postModle'>third</Link>
       {/* <Link href='/home/e1'>first</Link> */}
       {/* <Link href='/home/e2'>first</Link> */}
