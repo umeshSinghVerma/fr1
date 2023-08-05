@@ -4,6 +4,7 @@ import { SidenavContent } from '@/components/SidenavContent'
 import { Connections } from '@/components/home/Connections'
 import DataStats from '@/components/home/DataStats'
 import ImageComp from '@/components/home/ImageComp'
+import MyForm from '@/components/home/MyForm'
 import Post from '@/components/home/Post'
 import Sidebar from '@/components/home/SideBar'
 import Link from 'next/link'
@@ -36,7 +37,7 @@ const Page = () => {
       {/* <div id='sidenav' className='absolute left-0 z-[10000]'>
         <Connections />
       </div> */}
-      <div className="flex">
+      {/* <div className="flex">
         <button
           className="fixed top-5 left-5 p-2 bg-gray-500 text-white"
           onClick={handleSidenavToggle}
@@ -45,14 +46,14 @@ const Page = () => {
         </button>
 
         <SideNav isOpen={sidenavOpen} onClose={handleSidenavClose}>
-          {/* Add sidenav content here */}
           <div className="p-4">
             <h2 className="text-xl font-semibold">Sidenav Content</h2>
             <SidenavContent />
           </div>
         </SideNav>
 
-      </div>
+    </div> */}
+    <MyForm />
 
 
     </>
