@@ -1,6 +1,7 @@
 'use client'
-import SideNav from '@/components/SideNav'
-import { SidenavContent } from '@/components/SidenavContent'
+import SideNav from '@/components/SideNav/SideNav'
+import SidenavUsable from '@/components/SideNav/SidenavUsable'
+import { SidenavContent } from '@/components/SideNav/SidenavContent'
 import { Connections } from '@/components/home/Connections'
 import DataStats from '@/components/home/DataStats'
 import ImageComp from '@/components/home/ImageComp'
@@ -9,16 +10,7 @@ import Post from '@/components/home/Post'
 import Sidebar from '@/components/home/SideBar'
 import Link from 'next/link'
 import React, { useState } from 'react'
-const Page = () => {
-  const [sidenavOpen, setSidenavOpen] = useState(false);
-
-  const handleSidenavToggle = () => {
-    setSidenavOpen(!sidenavOpen);
-  };
-
-  const handleSidenavClose = () => {
-    setSidenavOpen(false);
-  };
+const page = () => {
   return (
     <>
       {/* <Sidebar /> */}
@@ -37,23 +29,8 @@ const Page = () => {
       {/* <div id='sidenav' className='absolute left-0 z-[10000]'>
         <Connections />
       </div> */}
-      {/* <div className="flex">
-        <button
-          className="fixed top-5 left-5 p-2 bg-gray-500 text-white"
-          onClick={handleSidenavToggle}
-        >
-          Open Sidenav
-        </button>
 
-        <SideNav isOpen={sidenavOpen} onClose={handleSidenavClose}>
-          <div className="p-4">
-            <h2 className="text-xl font-semibold">Sidenav Content</h2>
-            <SidenavContent />
-          </div>
-        </SideNav>
-
-    </div> */}
-    <MyForm />
+      <SidenavUsable/>
 
 
     </>
@@ -61,4 +38,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default page
