@@ -16,7 +16,7 @@ const page = () => {
     <>
       {/* <Sidebar /> */}
       {/* <DataStats /> */}
-      {/* <Connections /> */}
+      <Connections />
       {/* <div className='flex flex-col'>
         <Link href='/home/InsideEventDetail/1'>InsiderEventDetail1</Link>
         <Link href='/home/e1'>e1</Link>
@@ -33,7 +33,7 @@ const page = () => {
       </div> */}
 
       {/* <SidenavUsable/> */}
-      <MyForm2 />
+      {/* <MyForm2 /> */}
 
     </>
 
