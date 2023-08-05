@@ -11,9 +11,14 @@ const page = () => {
       {/* <Sidebar /> */}
       {/* <DataStats /> */}
       {/* <Connections /> */}
-      <Link href='/home/InsideEventDetail/1'>first</Link>
-      <Link href='/home/e2'>second</Link>
-      <Link href='/home/postModle'>third</Link>
+      <div className='flex flex-col'>
+        <Link href='/home/InsideEventDetail/1'>InsiderEventDetail1</Link>
+        <Link href='/home/e1'>e1</Link>
+        <Link href='/home/e2'>e2</Link>
+        <Link href='/home/e11'>e11</Link>
+        <Link href='/home/postModle'>PostModle</Link>
+        <Link href='/contact'>Contact</Link>
+      </div>
       {/* <Link href='/home/e1'>first</Link> */}
       {/* <Link href='/home/e2'>first</Link> */}
       {/* <Post /> */}

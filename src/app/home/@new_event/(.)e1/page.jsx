@@ -38,7 +38,7 @@ export default function Page() {
 
                         </div>
                     </div>
-                    <div className='flex-col flex md:flex-row h-52 text-sm gap-9 p-8 '>
+                    <div className='flex-col flex md:flex-row text-sm gap-9 p-8 ' style={{minHeight:'200px'}}>
                         <div className=' flex flex-col'>
                             <p className='mb-2'>סוג האירוע *</p>
                             <MultipleSelector text={'בחר מרשימה'} />
@@ -51,8 +51,8 @@ export default function Page() {
                         </div>
                         <div className=' flex flex-col'>
                             <p className='mb-2'>מקום האירוע *</p>
-                            <div>
-                                <NormalTextBox />
+                            <div className='flex text-xs border-gray-300 border  items-center rounded-md'>
+                                <input type="text" className='h-full outline-none p-2 rounded-lg' />
                             </div>
                         </div>
                     </div>
