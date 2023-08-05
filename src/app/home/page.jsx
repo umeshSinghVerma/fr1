@@ -10,6 +10,7 @@ import Post from '@/components/home/Post'
 import Sidebar from '@/components/home/SideBar'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import MyForm2 from '@/components/home/MyForm2'
 const page = () => {
   return (
     <>
@@ -26,12 +27,13 @@ const page = () => {
       </div> */}
       {/* <Post /> */}
       {/* <ImageComp /> */}
+      {/* <MyForm /> */}
       {/* <div id='sidenav' className='absolute left-0 z-[10000]'>
         <Connections />
       </div> */}
 
-      <SidenavUsable/>
-
+      {/* <SidenavUsable/> */}
+      <MyForm2 />
 
     </>
 
