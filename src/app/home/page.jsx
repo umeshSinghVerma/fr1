@@ -11,12 +11,14 @@ import Sidebar from '@/components/home/SideBar'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import MyForm2 from '@/components/home/MyForm2'
+import Table1 from '@/components/home/Table1'
+import Table2 from '@/components/home/Table2'
 const page = () => {
   return (
     <>
       {/* <Sidebar /> */}
       {/* <DataStats /> */}
-      <Connections />
+      {/* <Connections /> */}
       {/* <div className='flex flex-col'>
         <Link href='/home/InsideEventDetail/1'>InsiderEventDetail1</Link>
         <Link href='/home/e1'>e1</Link>
@@ -34,6 +36,8 @@ const page = () => {
 
       {/* <SidenavUsable/> */}
       {/* <MyForm2 /> */}
+      {/* <Table1 /> */}
+      <Table2 />
 
     </>
 
