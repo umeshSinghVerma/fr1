@@ -131,13 +131,13 @@ const Post = () => {
   ];
   return (
     <section className="py-14 w-full h-screen">
-      <div className="max-w-screen-xl h-full overflow-y-scroll mx-auto px-4 text-gray-600 md:px-8">
+      <div className="max-w-screen-xl h-full overflow-y-scroll mx-auto px-2 text-gray-600 md:px-8">
         <div className="mt-2">
           <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-1">
             {features.map((item, idx) => (
               <li
                 key={idx}
-                className="flex flex-col items-center md:items-start md:flex-row md:justify-between gap-x-4 border-2 border-gray-400 rounded-md p-2 min-[480px]:p-6"
+                className="flex flex-col items-center md:items-start md:flex-row md:justify-between gap-x-4 border-2 border-gray-400 rounded-md p-1 text-sm min-[480px]:p-6"
               >
                 <div className="flex flex-col gap-y-2 min-[480px]:flex-row gap-x-4">
                   <img
@@ -154,7 +154,7 @@ const Post = () => {
                     <h4 className="text-lg text-gray-800 font-semibold">
                       {item.title}
                     </h4>
-                    <p className="w-80">{item.desc}</p>
+                    <p className="w-72">{item.desc}</p>
                     <a
                       href={item.href}
                       className="text-md underline text-indigo-600 duration-150 text-indigo-400 font-medium inline-flex items-center gap-x-1"
@@ -165,14 +165,14 @@ const Post = () => {
                 </div>
                 <div className="space-y-3 text-left">
                   <div className="flex items-center gap-x-6 justify-end">
-                    <div className="flex-none w-8 h-8 bg-black text-white rounded-lg flex items-center justify-center">
+                    <div className="flex-none w-6 h-6 border-gray border text-white rounded-lg flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="white"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
+                        stroke="black"
+                        class="w-4 h-4"
                       >
                         <path
                           stroke-linecap="round"
@@ -184,8 +184,8 @@ const Post = () => {
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
+                        width="24"
+                        height="24"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="#000000"

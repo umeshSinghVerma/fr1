@@ -40,7 +40,7 @@ const ImageComp = () => {
           {persons.map((item, idx) => (
             <li
               key={idx}
-              className="flex group relative justify-between w-[248px] h-[290px] gap-x-4 rounded-2xl hover:opacity-40"
+              className="flex group relative justify-between w-[248px] h-[290px] gap-x-4 rounded-2xl hover:opacity-60"
             >
               <img src={item.img} className="w-full h-full rounded-2xl" />
               <div className="absolute bottom-0 left-0 right-0 p-4 text-neutral-300 z-10">
@@ -91,8 +91,8 @@ const ImageComp = () => {
                   </span>
                 </div>
               </div>
-              <div className="hidden group-hover:block absolute p-4">
-                <button className="px-4 py-2 text-xl w-full mt-12 mb-4 text-white bg-black opacity-70 rounded-lg">
+              <div className="hidden group-hover:block z-10 absolute p-4">
+                <button className="px-4 py-2 text-xl w-full mt-12 mb-4 text-white bg-black opacity-100 rounded-lg">
                   اضغط هنا
                 </button>
                 <button className="px-4 py-2 w-full text-xl border-black border-2 text-black bg-transparent rounded-lg">

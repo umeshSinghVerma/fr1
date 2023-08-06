@@ -154,7 +154,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 right-0 h-full border-l bg-[#010030] text-white sm:w-72 w-16 py-8 sm:px-4">
+      <nav className=" h-screen border-l bg-[#010030] text-white sm:w-72 w-16 py-8 sm:px-4">
         <div class="flex flex-col h-full sm:px-4">
           <div className="h-20 flex flex-col items-center pr-2">
             <div
@@ -216,7 +216,7 @@ const Sidebar = () => {
                   </a>
                 </li>
               ))}
-              <li className="flex items-center gap-x-2 sm:px-8 py-3 rounded-lg  hover:bg-gray-300 active:bg-gray-100 duration-150"><span>تونيفيكا</span></li>
+              {/* <li className="flex items-center gap-x-2 sm:px-8 py-3 rounded-lg  hover:bg-gray-300 active:bg-gray-100 duration-150"><span>تونيفيكا</span></li> */}
               
             </ul>
           </div>
