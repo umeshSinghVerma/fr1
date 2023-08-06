@@ -47,8 +47,8 @@ const MyForm2 = () => {
   ];
   return (
     <section className="w-4/5 mx-auto">
-      <div className=" flex mt-5 gap-8">
-        <div className="w-[40%] flex flex-col gap-y-4">
+      <div className=" flex mt-5 gap-8 flex-col justify-center items-center min-[900px]:flex-row">
+        <div className="w-full min-[900px]:w-[40%] flex flex-col gap-y-4">
           <div className="flex flex-col gap-y-4">
             <div className="flex flex-col flex-wrap">
               <label
@@ -139,7 +139,7 @@ const MyForm2 = () => {
           })}
         </div>
         <div
-          className="w-[60%] flex flex-col border-r-2 border-gray-400 gap-y-4"
+          className="w-full min-[900px]:w-[60%] flex flex-col border-t-2 min-[900px]:border-r-2 min-[900px]:border-t-0 border-gray-400 gap-y-8"
           style={{ paddingRight: "40px" }}
         >
           <div className="flex gap-x-4 flex-wrap items-start">
@@ -164,7 +164,7 @@ const MyForm2 = () => {
           </div>
           <div className="m-4" style={{ fontSize: "12px" }}>
             <p className="font-bold mb-2"> התחל להקליד</p>
-            <div className="flex justify-start items-center gap-5 mb-2">
+            <div className="flex flex-wrap justify-start items-center gap-5 mb-2">
               <Image
                 src={"/insideEvent.png"}
                 alt="img"
@@ -189,7 +189,7 @@ const MyForm2 = () => {
                   5+
                 </div>
               </div>
-              <button className="flex py-2 items-center gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
+              <button className="w-full min-[1100px]:w-min flex py-2 items-center justify-center gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
                 להקליד
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -209,24 +209,24 @@ const MyForm2 = () => {
           </div>
           <div className="flex flex-col m-4 justify-center items-start">
             <p className="font-bold mb-2"> התחל להקליד</p>
-            <div className="w-full justify-between flex gap-x-8 flex-wrap">
-              <button className="flex py-2 flex-auto w-3/5 items-center justify-between gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
+            <div className="w-full min-[1200px]:justify-between flex flex-col items-start justify-center gap-y-4 min-[1200px]:flex-row gap-x-8">
+              <button className="flex py-2 flex-auto min-[1200px]:w-3/5 w-full items-center justify-between gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
                 <span>להקליד להקליד</span>
-                <span>www.youtube.com/wtfeud</span>
+                <span dir="ltr" className="text-ellipsis overflow-hidden">www.youtube.com/wtfeud</span>
               </button>
-              <button className="flex py-2 justify-center flex-auto w-1/5 items-center gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
+              <button className="flex py-2 justify-center flex-auto min-[1200px]:w-1/5 w-full items-center gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
                 להקליד
               </button>
             </div>
           </div>
           <div className="flex flex-col m-4 justify-center items-start">
             <p className="font-bold mb-2"> התחל להקליד</p>
-            <div className="w-full justify-between flex gap-x-8 flex-wrap">
-              <button className="flex py-2 flex-auto w-3/5 items-center justify-between gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
+            <div className="w-full min-[1200px]:justify-between flex flex-col items-start justify-center gap-y-4 min-[1200px]:flex-row gap-x-8">
+              <button className="flex py-2 flex-auto min-[1200px]:w-3/5 w-full items-center justify-between gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
                 <span>להקליד להקליד</span>
-                <span>www.youtube.com/wtfeud</span>
+                <span dir="ltr" className="text-ellipsis overflow-hidden"> www.youtube.com/wtfeud</span>
               </button>
-              <button className="flex py-2 justify-center flex-auto w-1/5 items-center gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
+              <button className="flex py-2 justify-center flex-auto min-[1200px]:w-1/5 w-full items-center gap-2 mr-auto px-4 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
                 להקליד
               </button>
             </div>

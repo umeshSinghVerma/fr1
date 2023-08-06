@@ -4,8 +4,8 @@ const MyForm = () => {
   return (
     <section>
       <div className="w-4/5 mx-auto flex flex-col items-center justify-center sm:justify-start">
-        <div className="w-full flex flex-col my-8 sm:my-4 gap-y-4 items-center sm:flex-row justify-start gap-x-8">
-          <div className="max-w-md px-4 sm:my-12">
+        <div className="w-full flex flex-col my-4 sm:my-2 gap-y-2 items-center sm:flex-row justify-start gap-x-4">
+          <div className="max-w-md px-2 sm:my-8">
             <label for="input-1" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
@@ -21,7 +21,7 @@ const MyForm = () => {
               />
             </div>
           </div>
-          <div className="max-w-md px-4 sm:my-12">
+          <div className="max-w-md px-2 sm:my-8">
             <label for="input-2" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
@@ -39,8 +39,8 @@ const MyForm = () => {
           </div>
         </div>
         <div className="w-full flex flex-col items-center border-t border-b border-gray-300 justify-center">
-          <div className="w-full flex flex-col-reverse items-center sm:flex-row justify-center sm:justify-between gap-x-8">
-            <div className="max-w-md px-4 my-8">
+          <div className="w-full flex flex-col-reverse items-center sm:flex-row justify-center sm:justify-between gap-x-6">
+            <div className="max-w-md px-2 my-1">
               <label
                 for="input-3"
                 className="block font-bold py-2 text-gray-500"
@@ -49,7 +49,7 @@ const MyForm = () => {
               </label>
               <div
                 dir="ltr"
-                className="flex flex-col gap-y-4 sm:flex-row items-center text-gray-400 gap-x-4"
+                className="flex flex-col gap-y-2 sm:flex-row items-center text-gray-400 gap-x-4"
               >
                 <input
                   type="text"
@@ -64,8 +64,8 @@ const MyForm = () => {
                 />
               </div>
             </div>
-            <div className="max-w-md px-4 my-8">
-              <div className="max-w-md px-4 mx-auto">
+            <div className="max-w-md px-2 my-1">
+              <div className="max-w-md px-2 mx-auto">
                 <label
                   for="input-4"
                   className="block font-bold py-2 text-gray-500"
@@ -86,8 +86,8 @@ const MyForm = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-col items-center sm:flex-row justify-center sm:justify-start gap-x-8">
-            <div className="text-center sm:text-right w-full my-8">
+          <div className="w-full flex flex-col items-center sm:flex-row justify-center sm:justify-start gap-x-6">
+            <div className="text-center sm:text-right w-full my-4">
               <label
                 for="input-3"
                 className="block font-bold py-2 pl-32 text-gray-500"
@@ -96,9 +96,9 @@ const MyForm = () => {
               </label>
               <div
                 dir="ltr"
-                className="flex flex-col-reverse min-[1000px]:flex-row items-center sm:items-end justify-center sm:justify-between text-gray-400 gap-y-12 min-[1000px]:gap-x-4"
+                className="flex flex-col-reverse min-[1000px]:flex-row items-center sm:items-end justify-center sm:justify-between text-gray-400 gap-y-8 min-[1000px]:gap-x-2"
               >
-                <div className="max-w-md flex flex-col-reverse sm:flex-row gap-x-4 gap-y-4">
+                <div className="max-w-md flex flex-col-reverse sm:flex-row gap-x-2 gap-y-2">
                   <button className="w-full flex items-center gap-2 px-4 py-2 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ const MyForm = () => {
                     className="w-full p-2.5 bg-transparent rounded-md border outline-none"
                   />
                 </div>
-                <div className="max-w-md flex flex-col-reverse sm:flex-row gap-x-4 gap-y-4">
+                <div className="max-w-md flex flex-col-reverse sm:flex-row gap-x-2 gap-y-2">
                   <div className="w-full flex items-center text-gray-400 border rounded-md">
                     <div className="px-4 py-2 rounded-l-md bg-white border-r">
                       050
@@ -143,8 +143,8 @@ const MyForm = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-wrap my-4 items-end flex-row justify-center sm:justify-start gap-x-8">
-          <div className="max-w-md px-4 my-8">
+        <div className="w-full flex flex-wrap my-2 items-end flex-row justify-center sm:justify-start gap-x-6">
+          <div className="max-w-md px-2 my-2">
             <label for="input-2" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
@@ -160,7 +160,7 @@ const MyForm = () => {
               />
             </div>
           </div>
-          <div className="max-w-md px-4 my-8">
+          <div className="max-w-md px-2 my-2">
             <label for="input-2" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
@@ -176,12 +176,12 @@ const MyForm = () => {
               />
             </div>
           </div>
-          <div className="max-w-md px-4 my-8">
+          <div className="max-w-md px-2 my-2">
             <button className="flex items-center gap-2 px-8 py-2 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
               להקלידהקליד
             </button>
           </div>
-          <div className="flex items-end gap-x-4 max-w-md xl:mr-auto px-4 my-8">
+          <div className="flex items-end gap-x-4 max-w-md xl:mr-auto px-2 my-2">
             <img
               src="https://randomuser.me/api/portraits/women/79.jpg"
               className="w-16 h-16 rounded-2xl"
