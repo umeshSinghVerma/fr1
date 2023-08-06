@@ -41,7 +41,7 @@ const page = () => {
       {/* <MyForm2 /> */}
       {/* <Table1 /> */}
       {/* <Table2 /> */}
-      <Table3 />
+      {/* <Table3 /> */}
 
     </>
 
