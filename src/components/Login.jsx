@@ -8,11 +8,6 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         router.push("/home");
-        // e.preventDefault();
-        // signIn("credentials", {
-        //     email,
-        //     password,
-        // });
     }
     return (
         <>
@@ -102,9 +97,7 @@ export default function Login() {
                         <button
                             type="submit"
                             className="w-full text-white bg-black hover:bg-white hover:text-black  border-2 border-black focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center darkt:bg-primary-600 darkt:hover:bg-primary-700 darkt:focus:ring-primary-800"
-                        // disabled={isLoading}
-                        >
-                            {/* {isLoading ? <Loader/>: "Sign in"} */}Login
+                        >Login
                         </button>
                         <p className="text-sm font-light text-gray-500 darkt:text-gray-400">
                             Do not have an account yet?{" "}
@@ -118,7 +111,6 @@ export default function Login() {
                                 Sign up
                             </button>
                         </p>
-                        {/* {error && <div className="text-slate-900 darkt:text-white text-sm">{error}</div>} */}
                     </form>
                 </div>
             </div>
