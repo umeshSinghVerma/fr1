@@ -57,7 +57,6 @@ export default function Page1(props) {
                                 <p>פרטי החוגגים</p>
                             </Link>
                         </div>
-
                     </div>
                     {
                         currentComp == 1 ? <Table1 /> : <Table4 />

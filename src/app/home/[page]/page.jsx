@@ -1,5 +1,6 @@
 'use client'
 import Page1 from '@/components/Pages/Page1'
+import Page2 from '@/components/Pages/page2'
 import Table1 from '@/components/home/Table1'
 import Table2 from '@/components/home/Table2'
 import { ContentWidthContext } from '@/contexts/ContentWidthContext'
@@ -16,7 +17,7 @@ export default function Page({ params }) {
     }
     else if (params.page == 2) {
         return (
-            <div className=' h-full overflow-x-auto' ><Table2 /></div>
+            <div className=' h-full overflow-x-auto' ><Page2/></div>
         )
     }
     return null

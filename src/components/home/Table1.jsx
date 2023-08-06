@@ -1,3 +1,5 @@
+'use client'
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Table1 = () => {
@@ -43,6 +45,7 @@ const Table1 = () => {
       plan: "اشتراك سنوي",
     },
   ];
+  const router = useRouter();
   return (
     <div className="max-w-screen-xl mx-auto px-4 md:px-8">
       <div className="mt-8 relative h-max overflow-auto">
@@ -108,14 +111,23 @@ const Table1 = () => {
           </thead>
           <tbody className="text-gray-600">
             {tableItems.map((item, idx) => (
-              <tr key={idx}>
+              <tr className="hover:shadow-lg" key={idx} onClick={()=>{
+                router.push('/home/postModle')
+              }}>
                 <td>
                   <input
+                  onClick={(e)=>{
+                    e.stopPropagation();
+                  }}
                     type="checkbox"
                     class="h-3 w-3 cursor-pointer rounded border-gray-300"
                   />
                 </td>
-                <td className="pr-6 py-2 whitespace-nowrap">{item.name}</td>
+                <td className="pr-6 py-2 cursor-pointer whitespace-nowrap hover:underline" onClick={
+                  (e)=>{
+                    e.stopPropagation();
+                  router.push('/home/InsideEventDetail/1')}
+                  }>{item.name}</td>
                 <td className="pr-6 py-2 whitespace-nowrap">
                   <div className="flex items-center overflow-hidden">
                     <img
