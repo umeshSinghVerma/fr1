@@ -1,5 +1,4 @@
 'use client'
-import Page1 from '@/components/Pages/Page1'
 import Page2 from '@/components/Pages/page2'
 import Page3 from '@/components/Pages/page3'
 import Page4 from '@/components/Pages/page4'
