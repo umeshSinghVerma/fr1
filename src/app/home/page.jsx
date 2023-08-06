@@ -17,10 +17,10 @@ import Table3 from '@/components/home/Table3'
 const page = () => {
   return (
     <>
-      {/* <Sidebar /> */}
+      <Sidebar />
       {/* <DataStats /> */}
       {/* <Connections /> */}
-      <div className='flex flex-col'>
+      {/* <div className='flex flex-col'>
         <Link href='/home/InsideEventDetail/1'>InsiderEventDetail1</Link>
         <Link href='/home/Steps/1'>Steps</Link>
         <Link href='/home/e1'>e1</Link>
@@ -28,7 +28,7 @@ const page = () => {
         <Link href='/home/e11'>e11</Link>
         <Link href='/home/postModle'>PostModle</Link>
         <Link href='/contact'>Contact</Link>
-      </div>
+      </div> */}
       {/* <Post /> */}
       {/* <ImageComp /> */}
       {/* <MyForm /> */}
@@ -41,7 +41,7 @@ const page = () => {
       {/* <MyForm2 /> */}
       {/* <Table1 /> */}
       {/* <Table2 /> */}
-      <Table3 />
+      {/* <Table3 /> */}
 
     </>
 
