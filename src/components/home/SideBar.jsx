@@ -156,17 +156,17 @@ const Sidebar = () => {
     <>
       <nav className=" h-screen border-l bg-[#010030] text-white sm:w-72 w-16 py-8 sm:px-4">
         <div class="flex flex-col h-full sm:px-4">
-          <div className="h-20 flex flex-col items-center pr-2">
+          <div className="h-20 relative flex flex-col items-center pr-2">
             <div
               ref={profileRef}
               onClick={() => setIsProfileActive(!isProfileActive)}
-              className="w-full border-[1px] border-gray-100 cursor-pointer rounded-3xl py-2 sm:px-4 flex items-center gap-x-4 hover:bg-white hover:border-[1px] hover:border-black active:bg-gray-150"
+              className="sm:w-full border-[1px] border-gray-100 cursor-pointer rounded-3xl p-0 sm:py-2 sm:px-4 flex items-center gap-x-4 hover:bg-[#342bc2cc] hover:border-[1px] hover:border-black"
             >
               <img
                 src="https://randomuser.me/api/portraits/women/79.jpg"
-                className="w-10 h-10 rounded-full"
+                className="sm:w-10 sm:h-10 w-6 h-6 rounded-full"
               />
-              <div>
+              <div className="hidden sm:block">
                 <span className="hidden sm:block text-sm font-semibold">
                   اليفيكا توني
                 </span>
@@ -176,7 +176,7 @@ const Sidebar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="w-5 h-5 mr-auto"
+                className="w-5 h-5 mr-auto hidden sm:block"
               >
                 <path
                   fillRule="evenodd"
@@ -186,14 +186,14 @@ const Sidebar = () => {
               </svg>
             </div>
             {isProfileActive ? (
-              <div className="hidden sm:block z-10 top-20 left-0 w-full rounded-lg bg-white shadow-md border text-sm text-gray-600">
+              <div className="absolute top-0 bottom-0 right-full w-max h-max sm:w-full sm:h-max sm:static sm:block z-10 w-full rounded-lg shadow-md border text-sm bg-[#010030] text-white">
                 <div className="p-4 text-right">
-                  <button className="block w-full p-2 text-right rounded-md hover:bg-gray-50 active:bg-gray-100 duration-150">
+                  <button className="block w-full p-2 text-right rounded-md hover:bg-[#342bc2cc]">
                     تسجيل خروج
                   </button>
                   <a
                     href="javascript:void(0)"
-                    className="block border-t w-full p-2 rounded-md hover:bg-gray-50 active:bg-gray-100 duration-150"
+                    className="block border-t w-full p-2 rounded-md hover:bg-[#342bc2cc]"
                   >
                     أضف حساب آخر
                   </a>
@@ -204,12 +204,12 @@ const Sidebar = () => {
             )}
           </div>
           <div>
-            <ul className="text-md font-medium flex-1 mt-4 pr-4 sm:px-2">
+            <ul className="text-md font-medium flex-1 mt-4 sm:pr-2 sm:px-2">
               {navigation.map((item, idx) => (
-                <li key={idx}>
+                <li key={idx} className="my-2 flex justify-center px-4 sm:justify-start">
                   <a
                     href={item.href}
-                    className="flex items-center gap-x-2 sm:px-8 py-3 rounded-lg  hover:bg-gray-300 active:bg-gray-100"
+                    className="flex items-center gap-x-2 sm:pl-28 sm:pr-4 py-1 rounded-lg  hover:bg-[#342bc2cc]"
                   >
                     <div>{item.icon}</div>
                     <span className="hidden sm:inline">{item.name}</span>
