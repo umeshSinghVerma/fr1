@@ -22,17 +22,17 @@ export default function InsideEventLayout(props) {
                         ✖
                     </button>
                     <div className='flex flex-col'>
-                        <div className='flex items-center w-full justify-between border-b-2 border-gray border-solid p-5'>
+                        <div className='flex items-center w-full justify-between border-b-2 border-gray border-solid'>
                             <h1 className='text-black font-bold text-xl'>
                                 הוספת אירוע חדש
                             </h1>
-                            <div className='flex'>
-                                <Link replace href='/home/InsideEventDetail/1' className={`border-black  border flex p-2 gap-2 ${currentComp==1 && 'opacity-50'}`}>
-                                    <p className='border-black text-sm border-solid border rounded-full w-6 flex justify-center items-center'>1</p>
+                            <div className='flex items-center justify-center text-xs'>
+                                <Link replace href='/home/InsideEventDetail/1' className={`flex items-center justify-center p-2 rounded-t-lg gap-2 ${currentComp==1 ? 'bg-gray-200':'bg-gray-50'}`}>
+                                    <p className=' rounded-[50%] w-4 flex justify-center items-center h-4 text-white bg-[#D15292]' style={{fontSize:'10px'}}>1</p>
                                     <p>פרטי האירוע</p>
                                 </Link>
-                                <Link replace href='/home/InsideEventDetail/2' className={`border-black border-r-0 border flex p-2 gap-2 ${currentComp==2 && 'opacity-50'}`}>
-                                    <p className='border-black text-sm border-solid border rounded-full w-6 flex justify-center items-center'>2</p>
+                                <Link replace href='/home/InsideEventDetail/2' className={` rounded-t-lg flex items-center justify-center p-2 gap-2 ${currentComp==2 ? 'bg-gray-200':'bg-gray-50'}`}>
+                                <p className=' rounded-[50%] w-4 flex justify-center items-center h-4 text-white bg-[#D15292]' style={{fontSize:'10px'}}>2</p>
                                     <p>פרטי החוגגים</p>
                                 </Link>
                             </div>
