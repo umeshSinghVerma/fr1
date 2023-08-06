@@ -66,12 +66,12 @@ export default function page({ params }) {
         },
     ]
     return (
-        <div className='w-[50vw]'>
+        <div style={{minWidth:'50vw'}}>
             {
                 params.comp === '1' ?
                     (
-                        <div className=' flex mt-5 gap-8'>
-                            <div className='w-[40%] flex flex-col'>
+                        <div className=' flex flex-col sm:flex-row mt-5 gap-8 overflow-y-auto overflow-x-hidden' style={{height:'400px'}}>
+                            <div className='w-full sm:w-[40%] flex flex-col'>
                                 {
                                     firstColumn.map((obj, index) => {
                                         return (
@@ -95,7 +95,7 @@ export default function page({ params }) {
                                     })
                                 }
                             </div>
-                            <div className='w-[60%]' style={{ paddingRight: '40px', borderRight: 'solid 1px gray' }}>
+                            <div className='w-full sm:w-[60%]' style={{ paddingRight: '40px', borderRight: 'solid 1px gray' }}>
                                 <div className='flex gap-20'>
                                     <div className='m-4' style={{ fontSize: '10px' }}>
                                         <p className='font-bold mb-2'>Name</p>
@@ -134,7 +134,7 @@ export default function page({ params }) {
                         </div>
                     ) :
                     (
-                        <div>
+                        <div style={{padding:'20px 0'}}>
                             <PostModal/>
                         </div>
                     )

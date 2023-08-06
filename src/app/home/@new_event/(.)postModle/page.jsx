@@ -20,7 +20,7 @@ export default function Page() {
                     >
                         ✖
                     </button>
-                    <div className='mb-3 gap-4 flex items-center'><span className='font-bold'>Hello</span><span className='text-xs text-gray-400 border border-gray-300 rounded-full pl-2 pr-2'>Hello</span></div>
+                    <div className='mb-3 gap-4 flex items-center'><span className='font-bold'>החתונה של דנית ויוסי</span><span className='text-xs  border border-gray-300 rounded-full pl-2 pr-2 bg-[#D8D8FE] text-[#181894]'>חתונה</span></div>
                     <div className='border-t pt-8 border-x-gray-200'>
                         <PostModalShow />
                     </div>
