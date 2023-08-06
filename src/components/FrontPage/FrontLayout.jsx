@@ -19,7 +19,7 @@ export default function FrontLayout() {
                     {/* <Otp/> */}
                     {/* <Forget/> */}
                     {/* <TwoTick/> */}
-                    <SignUp/>
+                    {/* <SignUp/> */}
                     <div className='hidden sm:block'>
                         <Image src='/footerLogin.png' width={400} height={10} alt='footer' />
                     </div>

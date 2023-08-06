@@ -38,8 +38,8 @@ const page = () => {
 
       {/* <SidenavUsable/> */}
       {/* <MyForm2 /> */}
-      {/* <Table1 /> */}
-      {/* <Table2 /> */}
+      {/* <Table1 />
+      <Table2 /> */}
 
     </>
 

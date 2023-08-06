@@ -70,12 +70,12 @@ export default function page({ params }) {
         },
     ]
     return (
-        <div className='w-[50vw]'>
+        <div style={{maxHeight:'400px'}} className='p-4 sm:p-0 overflow-y-auto m-3'>
             {
                 params.comp === '1' ?
                     (
-                        <div className='w-full rounded-lg bg-white text-black relative p-8'>
-                            <div className='flex-col flex md:flex-row text-sm gap-9 p-8 ' style={{ minHeight: '200px' }}>
+                        <div className='w-full rounded-lg bg-white text-black relative'>
+                            <div className='flex-col flex sm:flex-row text-sm gap-9 mt-4' style={{ minHeight: '200px' }}>
                                 <div className=' flex flex-col'>
                                     <p className='mb-2'>סוג האירוע *</p>
                                     <MultipleSelector text={'בחר מרשימה'} />
@@ -93,9 +93,9 @@ export default function page({ params }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className='border-t-2 border-solid border-gray flex justify-between items-center pt-8'>
+                            <div className='flex-col-reverse gap-2 sm:gap-0 sm:flex-row border-t-2 mt-4 border-solid border-gray flex justify-between items-center pt-8'>
 
-                                <div className='text-xs'>
+                                <div className='text-xs ml-auto'>
                                     <p className='font-bold'>העלאה מרוכזת</p>
                                     <p className='font-bold' style={{ fontSize: "10px" }}>אין לך זמן להעלות אירוע-אירוע, אנחנו מבינים אותך</p>
                                     <p style={{ fontSize: "10px" }}>העלה קובץ מסודר ואנחנו נעשה בשבילך את העבודה <Link href='/' className='text-blue-800 underline'>הורד קובץ לדוגמא </Link></p>
@@ -121,42 +121,42 @@ export default function page({ params }) {
                         </div>
                     ) :
                     (
-                        <div className='w-full rounded-lg bg-white text-black relative p-8'>
+                        <div className='w-full rounded-lg bg-white text-black relative sm:p-8'>
                             <div className='flex flex-col'>
-                                <div className='flex w-[50vw] pt-8 pb-8 gap-20 border-b-2 border-gray'>
+                                <div className='flex flex-col lg:flex-row pb-4 gap-4 lg:gap-20 border-b-2 border-gray'>
                                     <div className='flex flex-col gap-2'>
                                         <p className='font-bold w-min'>title</p>
-                                        <div className='flex gap-3 w-min'>
+                                        <div className='flex flex-col sm:flex-row gap-3'>
                                             <div className='flex text-xs border-gray-300 border items-center'>
-                                                <input type="text" className='h-full outline-none p-2' style={{ maxWidth: '100px' }} />
+                                                <input type="text" className='h-full outline-none p-2' style={{ minWidth: '100px' }} />
                                             </div>
                                             <div className='flex text-xs border-gray-300 border items-center'>
-                                                <input type="text" className='h-full outline-none p-2' style={{ maxWidth: '100px' }} />
+                                                <input type="text" className='h-full w-full outline-none p-2' style={{ minWidth: '100px' }} />
                                                 <div className='border-r p-2 border-gray-300'>050</div>
                                             </div>
                                         </div>
                                         <div className='flex text-xs border-gray-300 border items-center'>
-                                            <input type="text" className='h-full outline-none p-2' />
+                                            <input type="text" className='h-full w-full outline-none p-2' />
                                         </div>
                                     </div>
                                     <div className='flex flex-col gap-2'>
                                         <p className='font-bold w-min'>title</p>
-                                        <div className='flex gap-3 w-min'>
+                                        <div className='flex flex-col sm:flex-row gap-3'>
                                             <div className='flex text-xs border-gray-300 border items-center'>
-                                                <input type="text" className='h-full outline-none p-2' style={{ maxWidth: '100px' }} />
+                                                <input type="text" className='h-full outline-none p-2' style={{ minWidth: '100px' }} />
                                             </div>
                                             <div className='flex text-xs border-gray-300 border items-center'>
-                                                <input type="text" className='h-full outline-none p-2' style={{ maxWidth: '100px' }} />
+                                                <input type="text" className='h-full w-full outline-none p-2' style={{ minWidth: '100px' }} />
                                                 <div className='border-r p-2 border-gray-300'>050</div>
                                             </div>
                                         </div>
                                         <div className='flex text-xs border-gray-300 border items-center'>
-                                            <input type="text" className='h-full outline-none p-2' />
+                                            <input type="text" className='h-full w-full outline-none p-2' />
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div className='flex gap-2 pt-8 text-xs items-center'>
+                                    <div className='flex flex-col sm:flex-row gap-2 pt-8 text-xs items-center'>
                                         <p className='pl-2'>Textksjflskdajflskadjflsdajflk</p>
                                         <div className='bg-gray-200 p-1'>
                                             Some Text1
@@ -166,14 +166,13 @@ export default function page({ params }) {
                                         </div>
                                     </div>
                                     <div className='flex text-xs mt-4 mb-4 p-2 h-20 border-gray-300 border items-center'>
-                                        <input type="text" className='h-full outline-none p-2' />
+                                        <input type="text" className='h-full w-full outline-none p-2' />
                                     </div>
                                 </div>
                             </div>
                             <div className='w-full '>
                                 <p className='mr-auto text-white bg-black rounded-lg' style={{ width: "min-content", padding: "8px 50px" }} >Regiser</p>
                             </div>
-
                         </div>
                     )
             }

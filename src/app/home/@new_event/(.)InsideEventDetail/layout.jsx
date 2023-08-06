@@ -14,7 +14,7 @@ export default function InsideEventLayout(props) {
     return (
         <div>
             <Popup>
-                <div className='w-full max-h-[80vh] overflow-hidden rounded-lg bg-white text-black relative p-8'>
+                <div className='w-full p-0 max-h-[80vh] overflow-hidden rounded-lg bg-white text-black relative sm:p-8'>
                     <button
                         onClick={() => router.back()}
                         className='text-black absolute top-4 left-5'
@@ -22,7 +22,7 @@ export default function InsideEventLayout(props) {
                         ✖
                     </button>
                     <div className='flex flex-col'>
-                        <div className='flex items-center w-full justify-between border-b-2 border-gray border-solid'>
+                        <div className='flex flex-col sm:flex-row mt-8 sm:mt-0 items-center w-full justify-between border-b-2 border-gray border-solid'>
                             <h1 className='text-black font-bold text-xl'>
                                 הוספת אירוע חדש
                             </h1>
