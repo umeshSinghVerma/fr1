@@ -1,10 +1,11 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const Sidebar = () => {
   const navigation = [
     {
-      href: "javascript:void(0)",
+      href: "/home/table/1",
       name: "ملخص",
       icon: (
         <svg
@@ -27,7 +28,7 @@ const Sidebar = () => {
       ),
     },
     {
-      href: "javascript:void(0)",
+      href: "/home/2",
       name: "ادماج",
       icon: (
         <svg
@@ -207,13 +208,13 @@ const Sidebar = () => {
             <ul className="text-md font-medium flex-1 mt-4 sm:pr-2 sm:px-2">
               {navigation.map((item, idx) => (
                 <li key={idx} className="my-2 flex justify-center px-4 sm:justify-start">
-                  <a
+                  <Link
                     href={item.href}
                     className="flex items-center gap-x-2 sm:pl-28 sm:pr-4 py-1 rounded-lg  hover:bg-[#342bc2cc]"
                   >
                     <div>{item.icon}</div>
                     <span className="hidden sm:inline">{item.name}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
               {/* <li className="flex items-center gap-x-2 sm:px-8 py-3 rounded-lg  hover:bg-gray-300 active:bg-gray-100 duration-150"><span>تونيفيكا</span></li> */}

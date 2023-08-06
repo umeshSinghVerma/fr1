@@ -1,7 +1,10 @@
+'use client'
 import React from "react";
 import SidenavUsable from "../SideNav/SidenavUsable";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
   return (
     <nav className="flex justify-between text-xs min-[425px]:text-sm items-center px-2 min-[425px]:px-4 md:px-16 py-4">
       <div>
@@ -15,6 +18,9 @@ const Header = () => {
               "linear-gradient(0deg, var(--primary-pink, #ED3C95) 0%, var(--primary-pink, #ED3C95) 100%), #4A4DE6",
           }}
           className="flex items-center gap-2 px-2 min-[425px]:px-4 py-2 text-white rounded-lg"
+          onClick={()=>{
+              router.push('/home/Steps/1');
+            }}
         >
           אירוע חדש
           <svg
