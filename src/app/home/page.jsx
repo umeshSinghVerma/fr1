@@ -14,9 +14,11 @@ import MyForm2 from '@/components/home/MyForm2'
 import Table1 from '@/components/home/Table1'
 import Table2 from '@/components/home/Table2'
 import Table3 from '@/components/home/Table3'
+import Header from '@/components/Elements/Header'
 const page = () => {
   return (
     <>
+      {/* <Sidebar /> */}
       {/* <DataStats /> */}
       {/* <Connections /> */}
       <div className='flex flex-col'>
@@ -38,9 +40,11 @@ const page = () => {
 
       {/* <SidenavUsable/> */}
       {/* <MyForm2 /> */}
-      {/* <Table1 />
-      <Table2 />
-      <Table3 /> */}
+      {/* <Table1 /> */}
+      {/* <Table2 /> */}
+      {/* <Table3 /> */}
+      <Header />
+
     </>
 
   )
