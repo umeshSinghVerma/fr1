@@ -1,3 +1,5 @@
+'use client'
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Table2 = () => {
@@ -63,6 +65,7 @@ const Table2 = () => {
       plan: "اشتراك سنوي",
     },
   ];
+  const router = useRouter();
   return (
     <div className="w-full mx-auto px-4 md:px-8">
       <div className="mt-12 relative h-max overflow-auto">
@@ -214,6 +217,9 @@ const Table2 = () => {
                 </td>
                 <td className="text-left whitespace-nowrap">
                   <svg
+                  onClick={()=>{
+                    router.push('/home/InsideEventDetail/1');
+                  }}
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"

@@ -2,7 +2,7 @@ import React from "react";
 
 const MyForm = () => {
   return (
-    <section>
+    <section className="text-sm border-t overflow-y-auto max-h-[340px] md:max-h-[600px]">
       <div className="w-4/5 mx-auto flex flex-col items-center justify-center sm:justify-start">
         <div className="w-full flex flex-col my-4 sm:my-2 gap-y-2 items-center sm:flex-row justify-start gap-x-4">
           <div className="max-w-md px-2 sm:my-8">
@@ -143,8 +143,8 @@ const MyForm = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-wrap my-2 items-end flex-row justify-center sm:justify-start gap-x-6">
-          <div className="max-w-md px-2 my-2">
+        <div className="w-full flex flex-wrap my-2 items-end justify-center sm:justify-start gap-x-2">
+          <div className="max-w-sm px-2 my-2">
             <label for="input-2" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
@@ -160,7 +160,7 @@ const MyForm = () => {
               />
             </div>
           </div>
-          <div className="max-w-md px-2 my-2">
+          <div className="max-w-sm px-2 my-2">
             <label for="input-2" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
@@ -176,15 +176,15 @@ const MyForm = () => {
               />
             </div>
           </div>
-          <div className="max-w-md px-2 my-2">
+          <div className="max-w-sm px-2 my-2">
             <button className="flex items-center gap-2 px-8 py-2 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
               להקלידהקליד
             </button>
           </div>
-          <div className="flex items-end gap-x-4 max-w-md xl:mr-auto px-2 my-2">
+          <div className="flex items-end gap-x-4 max-w-sm xl:mr-auto px-2 my-2">
             <img
               src="https://randomuser.me/api/portraits/women/79.jpg"
-              className="w-16 h-16 rounded-2xl"
+              className="w-12 h-12 rounded-2xl"
             />
             <button className="flex items-center gap-2 px-8 py-2 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
               להקלידהקליד

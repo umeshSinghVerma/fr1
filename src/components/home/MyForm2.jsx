@@ -46,7 +46,7 @@ const MyForm2 = () => {
     },
   ];
   return (
-    <section className="w-4/5 mx-auto">
+    <section className="text-xs min-[425px]:text-sm w-4/5 mx-auto max-h-[250px]">
       <div className=" flex mt-5 gap-8 flex-col justify-center items-center min-[900px]:flex-row">
         <div className="w-full min-[900px]:w-[40%] flex flex-col gap-y-4">
           <div className="flex flex-col gap-y-4">
@@ -117,14 +117,13 @@ const MyForm2 = () => {
           </div>
           {firstColumn.map((obj, index) => {
             return (
-              <div key={index} className="m-4" style={{ fontSize: "20px" }}>
+              <div key={index} className="m-4">
                 <p className="font-bold mb-2">{obj.title}</p>
                 <div>
                   {obj.entites.map((obj, index) => {
                     return (
                       <div
-                        className="flex gap-8 text-gray-500 mb-2"
-                        style={{ fontSize: "12px" }}
+                        className="flex flex-col sm:flex-row sm:gap-4 text-gray-500 mb-2 text-xs"
                         key={index}
                       >
                         <span>{obj.text}</span>

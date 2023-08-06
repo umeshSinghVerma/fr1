@@ -10,7 +10,14 @@ import Table4 from '../home/Table4';
 export default function Page1(props) {
     const currentComp = props.currentComp;
     return (
-        <div className='flex flex-col w-full p-4  gap-y-16'>
+        <div className='flex flex-col w-full p-4  gap-y-8'>
+            <div className="flex min-[450px]:py-0 gap-x-2 rounded-2xl items-center px-4 md:px-8 ">
+                    <select className=" bg-transparent border border-gray outline-none rounded-lg p-1">
+                        <option>חיפוש חופשי</option>
+                        <option>חיפוש חופשי</option>
+                        <option>חיפוש חופשי</option>
+                    </select>
+            </div>
             <div className='ml-auto'>
                 <DataStats />
             </div>

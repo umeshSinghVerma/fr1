@@ -109,11 +109,11 @@ const DataStats = () => {
   ];
   return (
     <section>
-      <ul className="flex flex-col pr-10 gap-4 items-center justify-center sm:flex-row">
+      <ul className="flex flex-wrap pr-10 gap-4 items-center justify-start">
         {stats.map((item, idx) => (
           <li
             key={idx}
-            className="w-[216px] flex flex-col justify-between h-[96px] rounded-[8px] border-1 border-[#E6E7E9] bg-[#f7f7f7] px-6 py-4"
+            className="w-full sm:w-[216px] flex flex-col justify-between h-[96px] rounded-[8px] border-1 border-[#E6E7E9] bg-[#f7f7f7] px-6 py-4"
           >
             <div className="flex w-full justify-between items-end">
               <p className="text-xs not-italic font-semibold uppercase  text-gray-900 mb-2">
