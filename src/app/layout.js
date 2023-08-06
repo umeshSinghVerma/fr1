@@ -1,3 +1,4 @@
+import { ContentWidthContextProvider } from '@/contexts/ContentWidthContext'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -12,7 +13,9 @@ export default function Layout(props) {
   return (
     <html dir='rtl'>
       <body>
-        {props.children}
+        <ContentWidthContextProvider>
+          {props.children}
+        </ContentWidthContextProvider>
       </body>
     </html>
   )
