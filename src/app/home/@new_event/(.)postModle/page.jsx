@@ -2,10 +2,6 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 import Popup from '@/components/Popup';
-import DateSelector from '@/components/Elements/DateSelector';
-import MultipleSelector from '@/components/Elements/MultipleSelector';
-import NormalTextBox from '@/components/Elements/NormalTextBox';
-import Link from 'next/link';
 import PostModalShow from '@/components/home/PostModalShow';
 
 export default function Page() {
