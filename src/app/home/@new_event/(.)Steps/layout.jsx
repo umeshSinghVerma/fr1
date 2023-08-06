@@ -27,17 +27,16 @@ export default function InsideEventLayout(props) {
                                 הוספת אירוע חדש
                             </h1>
                             <div className='flex items-center justify-center text-xs'>
-                                <Link replace href='/home/InsideEventDetail/1' className={`flex items-center justify-center p-2 rounded-t-lg gap-2 ${currentComp==1 ? 'bg-gray-200':'bg-gray-50'}`}>
+                                <Link replace href='/home/Steps/1' className={`flex items-center justify-center p-2 rounded-t-lg gap-2 ${currentComp==1 ? 'bg-gray-200':'bg-gray-50'}`}>
                                     <p className=' rounded-[50%] w-4 flex justify-center items-center h-4 text-white bg-[#D15292]' style={{fontSize:'10px'}}>1</p>
                                     <p>פרטי האירוע</p>
                                 </Link>
-                                <Link replace href='/home/InsideEventDetail/2' className={` rounded-t-lg flex items-center justify-center p-2 gap-2 ${currentComp==2 ? 'bg-gray-200':'bg-gray-50'}`}>
+                                <Link replace href='/home/Steps/2' className={` rounded-t-lg flex items-center justify-center p-2 gap-2 ${currentComp==2 ? 'bg-gray-200':'bg-gray-50'}`}>
                                 <p className=' rounded-[50%] w-4 flex justify-center items-center h-4 text-white bg-[#D15292]' style={{fontSize:'10px'}}>2</p>
                                     <p>פרטי החוגגים</p>
                                 </Link>
                             </div>
                             <div></div>
-
                         </div>
                     </div>
                     {props.children}

@@ -1,10 +1,8 @@
-import Login from '@/components/Login'
-import Image from 'next/image'
-
+import FrontLayout from '@/components/FrontPage/FrontLayout'
 export default function Home() {
   return (
     <div>
-      <Login />
+      <FrontLayout/>
     </div>
   )
 }
