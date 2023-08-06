@@ -9,13 +9,19 @@ import MyForm from '@/components/home/MyForm'
 import Post from '@/components/home/Post'
 import Sidebar from '@/components/home/SideBar'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MyForm2 from '@/components/home/MyForm2'
 import Table1 from '@/components/home/Table1'
 import Table2 from '@/components/home/Table2'
 import Table3 from '@/components/home/Table3'
 import Header from '@/components/Elements/Header'
-const page = () => {
+import { useRouter } from 'next/navigation'
+const Page = () => {
+  const router = useRouter();
+  useEffect(() => {
+    router.push('/home/table/1');
+  })
+  return null
   return (
     <>
       {/* <Sidebar /> */}
@@ -50,4 +56,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

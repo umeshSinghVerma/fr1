@@ -59,7 +59,7 @@ export default function Otp() {
                     <p>התחבר עם פייסבוק</p>
                 </div>
                 <div className='bg-[#ED3C95] p-3 cursor-pointer text-white rounded flex justify-center items-center' onClick={()=>{
-                    router.push('/home/1');
+                    router.push('/home/table/1');
                 }}>
                     <p>התחבר</p>
                 </div>
