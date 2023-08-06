@@ -1,12 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
 import { useParams } from 'next/navigation'
-import DataStats from '@/components/home/DataStats';
-import { Connections } from '@/components/home/Connections';
-import Table1 from '@/components/home/Table1';
-import Table2 from '@/components/home/Table2';
-import Page1 from '@/components/Pages/Page1';
+import Page1 from '/src/components/Pages/page1.jsx';
 
 export default function Page() {
     const params = useParams(); 
