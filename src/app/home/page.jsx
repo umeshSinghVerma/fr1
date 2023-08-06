@@ -13,6 +13,7 @@ import React, { useState } from 'react'
 import MyForm2 from '@/components/home/MyForm2'
 import Table1 from '@/components/home/Table1'
 import Table2 from '@/components/home/Table2'
+import Table3 from '@/components/home/Table3'
 const page = () => {
   return (
     <>
@@ -38,8 +39,9 @@ const page = () => {
 
       {/* <SidenavUsable/> */}
       {/* <MyForm2 /> */}
-      {/* <Table1 />
-      <Table2 /> */}
+      {/* <Table1 /> */}
+      {/* <Table2 /> */}
+      <Table3 />
 
     </>
 
