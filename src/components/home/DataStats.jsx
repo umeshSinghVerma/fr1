@@ -83,7 +83,7 @@ const DataStats = () => {
   ];
   return (
     <section>
-      <ul className="flex flex-col gap-4 items-center justify-center sm:flex-row">
+      <ul className="flex flex-col pr-10 gap-4 items-center justify-center sm:flex-row">
         {stats.map((item, idx) => (
           <li
             key={idx}

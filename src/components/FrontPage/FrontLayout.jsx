@@ -16,7 +16,7 @@ export default function FrontLayout() {
                     <div className='sm:hidden mt-4'>
                         <Image src='/HeaderLogin.png' width={500} height={10} alt='footer' />
                     </div>
-                    {/* <Otp/> */}
+                    <Otp/>
                     {/* <Forget/> */}
                     {/* <TwoTick/> */}
                     {/* <SignUp/> */}

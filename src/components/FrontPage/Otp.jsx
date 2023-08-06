@@ -1,6 +1,9 @@
+'use client'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 export default function Otp() {
+    const router = useRouter();
     return (
         <div className='flex w-full sm:w-[70%] flex-col'>
             <div className='sm:bg-white sm:shadow-lg flex flex-col gap-5 rounded-lg' style={{ padding: '48px 24px' }}>
@@ -55,7 +58,9 @@ export default function Otp() {
                     </svg>
                     <p>התחבר עם פייסבוק</p>
                 </div>
-                <div className='bg-[#ED3C95] p-3 text-white rounded flex justify-center items-center'>
+                <div className='bg-[#ED3C95] p-3 cursor-pointer text-white rounded flex justify-center items-center' onClick={()=>{
+                    router.push('/home/1');
+                }}>
                     <p>התחבר</p>
                 </div>
                 <div className='flex items-center justify-center gap-1'>

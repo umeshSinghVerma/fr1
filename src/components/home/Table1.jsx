@@ -45,7 +45,7 @@ const Table1 = () => {
   ];
   return (
     <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-      <div className="mt-12 relative h-max overflow-auto">
+      <div className="mt-8 relative h-max overflow-auto">
         <table className="w-full table-auto text-sm text-right">
           <thead className="text-gray-600 font-medium border-b">
             <tr>

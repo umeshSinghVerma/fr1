@@ -32,7 +32,7 @@ export default function DashboardLayout(props) {
             </div>
             <div className="flex flex-col flex-grow">
                 <div className="w-full"><Header/></div>
-                    <div id="content"  className="flex-grow bg-yellow-50 w-[calc(100vw-64px)]  sm:w-[calc(100vw-290px)]">
+                    <div id="content"  className="flex-grow  w-[calc(100vw-64px)]  sm:w-[calc(100vw-290px)]">
                         {props.children}
                         {props.new_event}
                     </div>

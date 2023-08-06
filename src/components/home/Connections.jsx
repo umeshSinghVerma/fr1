@@ -272,22 +272,22 @@ export const Connections = () => {
     },
   ];
   return (
-    <section className="w-[350px] bg-white border-[1px] border-gray-300 rounded-2xl">
-      <span className="block px-8 pt-8 text-black text-md font-semibold mb-4">
+    <section className="w-[300px]  bg-white border-[1px] border-gray-300 rounded-lg">
+      <span className="block px-6  pt-6 text-black text-md font-semibold mb-4">
         התראות אחרונות
       </span>
       {
-        <ul className="grid px-8 h-[290px] overflow-y-scroll gap-2 sm:grid-cols-1 md:grid-cols-1">
+        <ul className="grid px-6 h-[250px] overflow-y-scroll gap-2 sm:grid-cols-1 md:grid-cols-1">
           {connect.map((item, id) => {
             return (
               <li key={id}>
-                <div className="py-2 px-4 border-b border-gray-300">
+                <div className="py-1 px-2 border-b border-gray-300">
                   <div className="flex items-center gap-x-4">
                     <div className="flex-none w-8 h-8 bg-[#ED3C95] rounded-full flex items-center justify-center">
                       {item.icon}
                     </div>
                     <div>
-                      <span className="block text-gray-700 text-sm font-semibold">
+                      <span className="block text-gray-700 text-xs font-semibold">
                         {item.heading}
                       </span>
                       <span className="block mt-px text-gray-600 text-xs">
@@ -301,7 +301,7 @@ export const Connections = () => {
           })}
         </ul>
       }
-      <span className="block text-left px-6 py-4 underline border-t mt-8 text-black text-md font-semibold">
+      <span className="block text-left px-6 py-2 underline border-t mt-6 text-black text-md font-semibold">
       נקה התראות
       </span>
     </section>
