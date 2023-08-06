@@ -9,7 +9,7 @@ import Table2 from '@/components/home/Table2';
 import Page1 from '@/components/Pages/Page1';
 
 export default function Page() {
-    const params = useParams();
+    const params = useParams(); 
     const [currentComp, setCurrentComp] = useState(params.table);
     useEffect(() => {
         setCurrentComp(params.table);
