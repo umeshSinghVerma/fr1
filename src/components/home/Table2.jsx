@@ -72,20 +72,7 @@ const Table2 = () => {
               <th className="py-3 pr-6"></th>
               <th className="py-3 pr-6">
                 עוריאה םש
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="#a0a0a0"
-                  className="inline "
-                  stroke="#a0a0a0"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M3 20h18L12 4z" />
-                </svg>
+                
               </th>
               <th className="py-3 pr-6">
                 םינגראמה
@@ -121,8 +108,36 @@ const Table2 = () => {
                   <path d="M3 20h18L12 4z" />
                 </svg>
               </th>
-              <th className="py-3 pr-6">ךיראת</th>
-              <th className="py-3 pr-6">ךיראת</th>
+              <th className="py-3 pr-6">ךיראת
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="#a0a0a0"
+                  className="inline "
+                  stroke="#a0a0a0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 20h18L12 4z" />
+                </svg></th>
+              <th className="py-3 pr-6">ךיראת
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="#a0a0a0"
+                  className="inline "
+                  stroke="#a0a0a0"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 20h18L12 4z" />
+                </svg></th>
               <th className="py-3 pr-6">סוטטס</th>
               <th className="py-3 pr-6"></th>
             </tr>
@@ -211,7 +226,7 @@ const Table2 = () => {
                     stroke-linejoin="round"
                   >
                     <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
+                    <circle cx="12" cy="12" r="3" fill="#a0a0a0"></circle>
                   </svg>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
