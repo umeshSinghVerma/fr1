@@ -46,7 +46,7 @@ const MyForm2 = () => {
     },
   ];
   return (
-    <section className="text-xs min-[425px]:text-sm w-4/5 mx-auto max-h-[250px]">
+    <section className="text-xs min-[425px]:text-sm w-4/5 mx-auto">
       <div className=" flex mt-5 gap-8 flex-col justify-center items-center min-[900px]:flex-row">
         <div className="w-full min-[900px]:w-[40%] flex flex-col gap-y-4">
           <div className="flex flex-col gap-y-4">

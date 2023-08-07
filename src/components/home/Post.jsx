@@ -130,7 +130,7 @@ const Post = () => {
     },
   ];
   return (
-    <section className="py-2 w-full" style={{maxHeight:"200px"}}>
+    <section className="py-2 w-full">
       <div className="max-w-screen-xl h-full overflow-y-auto mx-auto px-2 text-gray-600 md:px-8">
         <div className="mt-2">
           <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-1">

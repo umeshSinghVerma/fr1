@@ -137,7 +137,7 @@ export default function Page6() {
                     <span className="text-[#8f8f8f]">שתף</span>
                 </div>
             </div>
-            <div className='ml-auto'>
+            <div className='flex-1'>
                 <DataStats />
             </div>
             <div className='flex flex-col md:flex-row justify-around items-center'>

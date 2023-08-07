@@ -2,8 +2,8 @@ import React from "react";
 
 const MyForm = () => {
   return (
-    <section className="text-sm border-t overflow-y-auto max-h-[340px] md:max-h-[600px]">
-      <div className="w-4/5 mx-auto flex flex-col items-center justify-center sm:justify-start">
+    <section className="text-sm border-t overflow-y-auto">
+      <div className=" mx-auto flex flex-col items-center justify-center sm:justify-start">
         <div className="w-full flex flex-col my-4 sm:my-2 gap-y-2 items-center sm:flex-row justify-start gap-x-4">
           <div className="max-w-md px-2 sm:my-8">
             <label for="input-1" className="block font-bold py-2 text-gray-500">

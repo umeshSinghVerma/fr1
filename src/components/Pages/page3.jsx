@@ -144,9 +144,9 @@ export default function Page3() {
             <span>X</span>
           </div>
         </div>
-        <div className="-mt-6 ">
+        {/* <div className="-mt-6 ">
           <PaginationComp />
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col">
         <Post />

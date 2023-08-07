@@ -10,7 +10,7 @@ export default function Page() {
         setCurrentComp(params.table);
     }, [params.table])
     return (
-        <div className='w-full h-full overflow-auto'>
+        <div className='w-full overflow-auto' style={{heightMax:'calc(100vh - 110px)',overflow:'auto'}}>
             <Page1 currentComp={currentComp} />
         </div>
     )
