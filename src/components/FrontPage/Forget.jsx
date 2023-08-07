@@ -1,6 +1,9 @@
+'use client'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 export default function Forget() {
+    const router = useRouter();
     return (
         <div className='flex w-full sm:w-[70%] flex-col'>
             <div className='sm:bg-white sm:shadow-lg flex flex-col gap-5 rounded-lg' style={{ padding: '48px 24px' }}>
@@ -54,7 +57,9 @@ export default function Forget() {
                     <p>התחבר</p>
                 </div>
                 <div className='flex items-center justify-center gap-1'>
-                    <p className='underline font-bold decoration-[#ED3C95]'>צור אותו כעת </p>
+                    <p className='underline font-bold decoration-[#ED3C95] cursor-pointer' onClick={()=>{
+                        router.push('/signup');
+                    }}>צור אותו כעת </p>
                     <p dir='rtl'>אין לך חשבון עדיין?</p>
                 </div>
             </div>

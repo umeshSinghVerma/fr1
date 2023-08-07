@@ -64,7 +64,11 @@ export default function Otp() {
                     <p>התחבר</p>
                 </div>
                 <div className='flex items-center justify-center gap-1'>
-                    <p className='underline font-bold decoration-[#ED3C95]'>צור אותו כעת </p>
+                    <p className='underline font-bold decoration-[#ED3C95] cursor-pointer' 
+                    onClick={()=>{
+                        router.push('/signup')
+                    }}>
+                    צור אותו כעת </p>
                     <p dir='rtl'>אין לך חשבון עדיין?</p>
                 </div>
             </div>

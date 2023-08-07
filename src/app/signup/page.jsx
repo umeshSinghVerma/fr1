@@ -1,11 +1,8 @@
+import SignUp from '@/components/FrontPage/Signup'
 import Image from 'next/image'
 import React from 'react'
-import Otp from './Otp'
-import Forget from './Forget'
-import TwoTick from './TwoTick'
-import SignUp from './Signup'
 
-export default function FrontLayout() {
+export default function page() {
     return (
         <div className='w-screen overflow-y-auto h-screen flex justify-center items-center' dir='ltr'>
             <div className='bg-yellow-50 w-screen h-screen flex flex-col sm:flex-row'>
@@ -16,10 +13,10 @@ export default function FrontLayout() {
                     <div className='sm:hidden mt-4'>
                         <Image src='/HeaderLogin.png' width={500} height={10} alt='footer' />
                     </div>
-                    <Otp/>
+                    {/* <Otp/> */}
                     {/* <Forget/> */}
                     {/* <TwoTick/> */}
-                    {/* <SignUp/> */}
+                    <SignUp/>
                     <div className='hidden sm:block'>
                         <Image src='/footerLogin.png' width={400} height={10} alt='footer' />
                     </div>
