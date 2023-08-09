@@ -105,7 +105,7 @@ export default function Page1(props) {
             <div>{currentComp == 1 ? <Table1 /> : <Table4 />}</div>
           </div>
         </div>
-        <div className="max-w-full overflow-auto">
+        <div className="max-w-full mx-auto overflow-auto">
           <ImageComp />
         </div>
       </div>
