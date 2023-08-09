@@ -11,6 +11,9 @@ import Table3 from '../home/Table3';
 export default function Page6() {
     return (
         <div className='flex flex-col w-full p-4  gap-y-16 overflow-y-auto'>
+            <div className='w-full flex items-center justify-center'>
+                <img src="/TopbannerImage.png" alt="" />
+            </div>
             <div className="flex text-sm flex-wrap gap-y-2 gap-x-8 px-4 md:px-8">
                 <div className="flex min-[450px]:py-0 gap-x-2 rounded-2xl items-center px-4 md:px-8 ">
                     <select className=" bg-transparent border border-gray outline-none rounded-lg p-2">

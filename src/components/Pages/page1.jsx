@@ -18,6 +18,9 @@ export default function Page1(props) {
                     <option>חיפוש חופשי</option>
                 </select>
             </div>
+            <div className='w-full flex items-center justify-center'>
+                <img src="/TopbannerImage.png" alt="" />
+            </div>
             <div className='flex-1'>
                 <DataStats />
             </div>
