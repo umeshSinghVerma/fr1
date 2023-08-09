@@ -34,13 +34,13 @@ const ImageComp = () => {
     },
   ];
   return (
-    <section className="p-8">
+    <section className="">
       <div className="flex items-center">
         <ul className="flex gap-x-6">
           {persons.map((item, idx) => (
             <li
               key={idx}
-              className="flex group relative justify-between w-[248px] h-[290px] gap-x-4 rounded-2xl hover:opacity-60"
+              className="flex group relative justify-between w-[228px] h-[270px] gap-x-4 rounded-2xl hover:opacity-60"
             >
               <img src={item.img} className="w-full h-full rounded-2xl" />
               <div className="absolute bottom-0 left-0 right-0 p-4 text-neutral-300 z-10">

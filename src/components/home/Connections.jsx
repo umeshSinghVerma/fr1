@@ -272,7 +272,7 @@ export const Connections = () => {
     },
   ];
   return (
-    <section className="w-[300px]  bg-white border-[1px] border-gray-300 rounded-lg">
+    <section className="max-w-full bg-white border-[1px] border-gray-300 rounded-lg">
       <span className="block px-6  pt-6 text-black text-md font-semibold mb-4">
         התראות אחרונות
       </span>
